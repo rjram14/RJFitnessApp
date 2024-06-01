@@ -1,0 +1,45 @@
+.navbar-brand {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    color:white;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-links a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links.hidden {
+      display: flex;
+    }
+  }
+  
